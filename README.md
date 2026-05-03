@@ -43,9 +43,11 @@ cp .env.example .env
 # Mở .env và điền thông tin thực tế của bạn
 ```
 
-```env
-FRONTEND_URL=http://localhost:5173   # Vite dev server
-BACKEND_URL=http://localhost:5000    # .NET Core API
+```env  
+FRONTEND_URL=http://localhost:5173 # Vite dev server
+BACKEND_URL=https://localhost:49265 # .NET Core API
+API_BASE_URL=https://localhost:49265/api
+    
 
 TEST_ADMIN_EMAIL=admin@yourapp.com
 TEST_ADMIN_PASSWORD=Admin@123456
