@@ -60,11 +60,11 @@ TEST_USER_PASSWORD=User@123456
 
 ```bash
 # Terminal 1 — Khởi động .NET Core backend
-cd your-backend
-dotnet run
+cd ChanShopBE
+dotnet run --project CuaHangQuanAo.API.csproj
 
 # Terminal 2 — Khởi động React + Vite frontend
-cd your-frontend
+cd ChanShop
 npm run dev
 ```
 
