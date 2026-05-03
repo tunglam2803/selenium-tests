@@ -1,0 +1,23 @@
+{
+  "name": "selenium-tests",
+  "version": "1.0.0",
+  "description": "Bộ kiểm thử Selenium cho ứng dụng .NET Core 9 + React + Vite + Tailwind v4",
+  "scripts": {
+    "test": "mocha 'tests/**/*.test.js' --timeout 60000 --reporter spec",
+    "test:auth": "mocha tests/auth.test.js --timeout 60000 --reporter spec",
+    "test:ui": "mocha tests/ui.test.js --timeout 60000 --reporter spec",
+    "test:api": "mocha tests/api.test.js --timeout 60000 --reporter spec",
+    "test:all": "mocha 'tests/**/*.test.js' --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=test-report",
+    "test:headless": "HEADLESS=true mocha 'tests/**/*.test.js' --timeout 60000 --reporter spec"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chai": "^5.1.0",
+    "chromedriver": "^148.0.1",
+    "selenium-webdriver": "^4.18.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3"
+  }
+}
